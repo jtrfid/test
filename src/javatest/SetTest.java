@@ -192,6 +192,16 @@ public class SetTest {
 		temp1.retainAll(temp2);  // 正确
 		//temp1.retainAll(s2pr.getPR()); // 交集, 错误
 		System.out.println("---temp1:"+temp1);
+		
+		System.out.println("==============");
+		temp1.clear(); temp2.clear();
+		temp1.addAll(s2pr.getPA());
+		temp1.add(s2pr.getPlace("p4"));
+		System.out.println("---temp1:"+temp1);
+		temp2.addAll(s2pr.getPR());
+		//temp1.removeAll(temp2);  // 正确
+		temp1.removeAll(s2pr.getPR()); // 差集, 结果也是正确的，似乎差集集合元素的类型可以不一致
+		System.out.println("---temp1:"+temp1);
 	}
 	
 	/**
