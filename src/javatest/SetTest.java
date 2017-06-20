@@ -12,8 +12,8 @@ import org.junit.Test;
 
 import de.uni.freiburg.iig.telematik.sepia.petrinet.abstr.AbstractPNNode;
 import de.uni.freiburg.iig.telematik.sepia.petrinet.pt.PTPlace;
-import edu.xidian.petrinet.S2PR;
-import edu.xidian.petrinet.S3PR;
+import edu.xidian.petrinet.S3PR.S2PR;
+import edu.xidian.petrinet.S3PR.S3PR;
 
 public class SetTest {
 	// List允许有重复元素，Set中元素唯一
